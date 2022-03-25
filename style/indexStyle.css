@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  color: rgb(6, 82, 145);
+}
+
+.horizontalRule {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+/*--------封面大圖及文字--------*/
+header {
+  background-image: url(../image/blurBackgroud.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /*寬度不構，自動往下*/
+}
+
+.coverImg {
+  width: 500px;
+  /*圖片大於500時不再變大*/
+  max-width: 100%; /*不使用width:100% 是因避免圖片解析度不好，隨父元素被放大時會糊掉*/
+  height: auto;
+  padding: 4.5rem 2rem 2rem 2rem;
+}
+
+/*--------nav bar--------*/
+nav {
+  /*background-color: rgb(0, 72, 121);*/
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  box-shadow: 2px 2px 4px 1px rgb(53, 52, 52);
+  transition: all 0.4s ease; /*配合js滑動變色漸變*/
+}
+
+.iconAndTitle {
+  display: flex;
+}
+
+.navLink {
+  display: flex;
+}
+
+nav img {
+  padding-left: 15px;
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 0.5rem 0.75rem;
+}
+
+nav ul li a {
+  /*color: white;*/
+  text-decoration: none;
+}
+
+/*--------大標題--------*/
+
+.title {
+  display: flex;
+  background-color: rgb(240, 238, 238);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/*-------內容區塊--------*/
+
+main section {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+}
+
+main .block {
+  display: flex;
+
+  width: 1000px;
+  flex-wrap: wrap;
+}
+
+section .imageBlock {
+  display: flex;
+  align-items: center;
+}
+
+section div img {
+  width: 500px;
+  max-width: 100%; /*不使用width:100% 是因避免圖片解析度不好，隨父元素被放大時會糊掉*/
+  height: auto;
+  display: flex;
+  padding: 2rem;
+  flex: 1 1 400px;
+}
+
+.word {
+  flex-direction: column;
+  display: flex;
+  padding: 2rem;
+  flex: 1 1 350px;
+}
+
+.word h2 {
+  padding: 0.65rem 0;
+}
+
+/*footer*/
+footer {
+  background-color: rgb(0, 72, 121);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  color: aliceblue;
+  padding: 2rem 1rem;
+}
+/* RWD SETTING*/
+
+@media screen and (max-width: 560px) {
+  nav {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 377px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .coverImg {
+    padding: 2rem 0rem 0rem 0rem;
+  }
+}
