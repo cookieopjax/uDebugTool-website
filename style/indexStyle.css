@@ -26,6 +26,10 @@ h6 {
   );
 }
 
+ol li {
+  list-style-position: inside;
+}
+
 /*--------封面大圖及文字--------*/
 header {
   background-image: url(../image/blurBackgroud.jpg);
@@ -161,5 +165,13 @@ footer p {
 @media screen and (max-width: 1000px) {
   .coverImg {
     padding: 2rem 0rem 0rem 0rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  main section {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: flex-start;
   }
 }

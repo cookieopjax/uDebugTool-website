@@ -1,0 +1,27 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+main section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.index {
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+  flex: 0 1 150px;
+  justify-content: flex-start;
+}
+
+.devLog {
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+  flex: 0 1 350px;
+}

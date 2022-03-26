@@ -1,0 +1,36 @@
+section div img {
+  width: 250px;
+  max-width: 100%; /*不使用width:100% 是因避免圖片解析度不好，隨父元素被放大時會糊掉*/
+  height: auto;
+  display: flex;
+  padding: 2rem;
+  flex: 1 1 400px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageBlock {
+  flex: 1 1 250px;
+  justify-content: right;
+}
+
+.word {
+  flex: 1 1 250px;
+}
+.word h2 {
+  display: flex;
+}
+
+.word p {
+  display: flex;
+}
+
+@media screen and (max-width: 500px) {
+  .imageBlock {
+    justify-content: flex-start;
+  }
+}
