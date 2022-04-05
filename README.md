@@ -2,5 +2,5 @@
 
 ### Front end : HTML, CSS, JavaScript
 ### Back end : Express (node.js)
-### DataBase : mySql
+### DataBase : MySQL
 ### Deploy : Netlify, heroku
